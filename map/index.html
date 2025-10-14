@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spifftopia Book</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <script src="./js/script.js" defer></script>
+  </head>
+
+  <body class="unselectable dark-mode">
+    <main>
+      <div class="map-container">
+        <img src="./images/board-hires.png" alt="map" class="map-image" />
+        <div class="map-overlay">
+          <!-- <img src="./images/map-empty.png" alt="compass" class="overlaymap-image" /> -->
+          <img src="./images/map-overlay.png" alt="overlay" class="overlay-image" />
+        </div>
+      </div>
+      <button id="toggle-mode-btn">
+        <i class="bi bi-moon-stars-fill"></i>
+      </button>
+      <button id="hide-overlay-btn">
+        <i id="hide-overlay-icon" class="bi bi-check-circle-fill"></i>
+      </button>
+    </main>
+  </body>
+</html>

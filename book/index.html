@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spifftopia Book</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/backcover.css" />
+    <link rel="stylesheet" href="./css/frontcover.css" />
+    <link rel="stylesheet" href="./css/page.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <script src="./js/pagesscript.js" defer></script>
+    <script src="./js/script.js" defer></script>
+  </head>
+
+  <body class="unselectable dark-mode">
+    <main>
+      <input type="checkbox" id="cover_checkbox" />
+
+      <div id="flip_book">
+        <div class="cover_container">
+          <div class="front_cover">
+            <label for="cover_checkbox" id="cover"></label>
+          </div>
+          <div class="front_cover_backside">
+            <label for="cover_checkbox" id="cover"></label>
+          </div>
+        </div>
+        <div class="back_cover"></div>
+      </div>
+
+      <button id="toggle-mode-btn">
+        <i class="bi bi-moon-stars-fill"></i>
+      </button>
+    </main>
+  </body>
+</html>

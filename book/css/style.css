@@ -1,0 +1,93 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+      image-rendering: pixelated;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      overflow: -moz-hidden-unscrollable;
+}
+
+:root {
+    --dark-color: rgb(17, 17, 17);
+    --dark-hover: rgba(255, 255, 255, 0.1);
+    --light-color: rgb(245, 245, 245);
+    --light-hover: rgba(0, 0, 0, 0.1);
+}
+
+body {
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace, sans-serif;
+    font-size: 0.5rem;
+    transition: background-color 0.3s;
+}
+
+body.light-mode {
+    color: var(--dark-color);
+    background-color: var(--light-color);
+}
+
+body.light-mode #toggle-mode-btn:hover {
+    background-color: var(--light-hover);
+}
+
+body.dark-mode {
+    color: var(--light-color);
+    background-color: var(--dark-color);
+}
+
+body.dark-mode #toggle-mode-btn:hover {
+    background-color: var(--dark-hover);
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+input {
+    display: none;
+}
+
+.unselectable {
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#toggle-mode-btn {
+    width: 2rem;
+    height: 2rem;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: transparent;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+#flip_book {
+    width: 32rem;
+    height: 40rem;
+    position: relative;
+    transition: transform 1s;
+    perspective: 2000px;
+}
