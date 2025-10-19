@@ -1,11 +1,14 @@
 [
   {
     "frontImage": "./assets/images/page_front.png",
+    "frontHtmlPath": "./html/page1_front.html",
+    "backHtmlPath": "./html/page1_back.html",
     "backImage": "./assets/images/page_back.png"
   },
   {
     "frontImage": "./assets/images/page_front.png",
-    "backImage": "./assets/images/page_back.png"
+    "backImage": "./assets/images/page_back.png",
+    "frontHtmlPath": "./html/page2_front.html"
   },
   {
     "frontImage": "./assets/images/page_front.png",
